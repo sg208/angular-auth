@@ -1,0 +1,10 @@
+<h2 class="make-gutter">In-stock Products</h2>
+
+<ul class="productlist">
+    <li class="card make-gutter" *ngFor='let product of products | async'>
+        <h3>{{product.name}}</h3>
+        <div class="pricing"><span >{{ product.currentPrice | currency: 'USD':'symbol'}}</span></div>
+        <p>Product ID: {{ (product.id).toUpperCase() }}</p>
+        <p>This product was last updated on {{ product.lastUpdate | date: 'EEEE, MMMM d, y, h:mm a' }} ({{ product.lastUpdate | date: 'zzzz' }})</p>
+    </li>
+</ul>

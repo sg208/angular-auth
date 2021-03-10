@@ -1,0 +1,72 @@
+// Breakpoints =====================
+// $breakpoint options are in _configuration.scss
+// Sample usage:
+// .some-class {
+//   font-size: 1rem;
+  
+//   @include respond-min($bp-small) {
+//     font-size: 2rem;
+//   }
+// }
+@mixin respond-min($breakpoint) {
+    @media (min-width: $breakpoint) {
+      // define your styles here for the corresponding breakpoint
+      // mobile first
+      @content;
+    }
+}
+
+// Button Primary =====================
+// Custom mixin to autogenerate btn-primary using mixin rather than library.
+// You can extend it even further with @content if you want.
+// Sample usage:
+// .some-button-1 {
+//   @include btn-primary(**pass your custom color here if other than $global-btn-primary-color-background**);
+// }
+// .some-button-2 {
+//   @include btn-primary(**pass your custom color here if other than $global-btn-primary-color-background**){
+//     **** additional styles here ****
+//   };
+// }
+@mixin btn-primary($background-color: $global-btn-primary-color-background, $background-color-hover: $global-btn-primary-color-hover, $background-color-focus: $global-btn-primary-color-focus, $button-width: 100%, $text-color: $global-btn-primary-color-text) {
+  width: $button-width;
+  background: $background-color;
+  border-color: transparent;
+  color: $text-color;
+  padding: 1rem;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: inherit;
+
+  &:hover {
+    background: $background-color-hover;
+  }
+
+  &:focus {
+    border-color: $background-color-focus;
+  }
+
+  // @content is use to extend the original
+  @content;
+}
+
+/// Input Text =====================
+@mixin input-text($background-color: $global-user-input-background-color, $background-color-focus: $global-user-input-background-color-focus, $background-color-placeholder: $global-user-input-background-color-placeholder, $border-color: $global-user-input-border-color) {
+  background: $background-color; 
+  box-sizing: border-box;        
+  border: $global-border-size solid $border-color;
+  padding: 1rem;
+  font-family: inherit;
+
+  &:focus {
+    border-color: $background-color-focus;
+  }
+
+  &::placeholder {
+    color: $background-color-placeholder;
+  }
+
+  // @content is use to extend the original
+  @content;
+}

@@ -1,0 +1,8 @@
+<h1 class="text-center">{{this.pageTitle}}</h1>
+<div class="login">
+    <form class="login-container">
+      <input class="login-input" type="text" placeholder="Username" #username>    
+      <input class="login-input" type="password" placeholder="Password" #password>
+      <button class="login-submit" (click)="signIn(username.value, password.value)">Login</button>
+    </form>    
+</div>

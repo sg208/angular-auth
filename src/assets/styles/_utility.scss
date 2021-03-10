@@ -1,0 +1,6 @@
+/// convert px to rem
+/// sample use
+/// .sample-class { font-size: convert2rem(10)}
+@function convert2rem($target, $base-size: 16) {
+    @return ($target/$base-size)*1rem;   
+}

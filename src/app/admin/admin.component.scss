@@ -1,0 +1,27 @@
+@import '../../assets/styles/styles';
+
+/// fun color config
+.fun {
+    &-underline {
+        border-bottom: convert2rem(5) dotted $custom-pink;
+    }
+    &-color {
+        color: $custom-pink;
+    }
+}
+
+.text-center {
+    text-align: $center;
+}
+
+.button-logout {
+    /// importing basic button setup and passing customized bg color
+    @include btn-primary($custom-pink);
+
+    /// other overrides or additional styles
+    border-radius: $global-border-radius;
+    max-width: 100%;
+    margin: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}

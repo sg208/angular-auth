@@ -1,0 +1,51 @@
+/// Colors
+$color-one: #1a1a1a;
+$color-two: #ffffff;
+$color-three: #bbb;
+$color-four: #f4f4f4;
+$color-five: #888;
+$color-six: #757575;
+
+/// Custom colors
+$custom-green: #008558;
+$custom-purple: #7D55C7;
+$custom-pink: #E6007E;
+
+/// Body and Main container
+$global-background-color: $color-one;
+$global-main-container-background: $color-two;
+$global-main-container-max-width: 1440px;
+
+/// Fonts
+$global-font-color: $color-two;
+$global-font-family: 'Ubuntu', sans-serif;
+$global-font-size: 1rem;
+
+/// btn-primary
+$global-btn-primary-color-background: $custom-green;
+$global-btn-primary-color-hover: $custom-purple;
+$global-btn-primary-color-focus: $custom-purple;
+$global-btn-primary-color-text: $color-two;
+
+/// input-text
+$global-user-input-background-color: $color-two;
+$global-user-input-background-color-focus: $color-five;
+$global-user-input-background-color-placeholder: $color-three;
+$global-user-input-border-color: $color-three;
+
+/// Skip to main content for a11y
+$global-skiptomaincontent-color-background: $custom-purple;
+$global-skiptomaincontent-color-text: $color-two;
+
+/// Borders
+$global-border-radius: 0.25rem;
+$global-border-size: 1px;
+
+/// Breakpoints
+$bp-small: 650px;
+$bp-medium: 1025px;
+
+/// Misc
+$center: center;
+$left: left;
+$right: right;

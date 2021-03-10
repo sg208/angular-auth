@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+/// importing all global related styles
+@import './assets/styles/styles';
+
+/// import global font
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/// generic body
+body {
+    background: $global-background-color;
+    font-family: $global-font-family;
+    color: $global-font-color;
+    font-size: $global-font-size;
+    
+    .skiptomain {
+        position: absolute;
+        top: 0;
+        left: -10000px;
+        height: convert2rem(1);
+        width: convert2rem(1);
+    
+        &:focus {        
+            left: 0;
+            padding: 1rem;
+            height: auto;
+            width: 100%;
+            background-color: $global-skiptomaincontent-color-background;
+            font-weight: 600;
+            text-decoration: underline;
+            text-align: center;
+            color: $global-skiptomaincontent-color-text;    
+        }    
+    }
+
+    .main {
+        &-container {
+            max-width: $global-main-container-max-width;
+            margin: 0 auto;
+            background-color: $global-main-container-background;
+            min-height: 25vh;        
+            padding: convert2rem(1) 0 0 0;
+            border-radius: $global-border-radius;
+            color: initial;
+        
+            h1, h2, h3, p {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    // visible focus element for WCAG 2.0 level AA
+    // with some fun animated fade out effect
+    a, button, input, [tabindex='0'] {
+        &:focus {
+            outline: 3px solid $custom-purple;
+            transition: 0.1s;
+        }
+    }
+
+    .text{
+        &-underline {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../assets/styles/styles';
+
+.footer-content {
+    font-size: 0.75rem;
+    text-align: $center;
+    color: $color-three;
+
+    a {
+        color: $color-two;
+        &:link, &:focus, &:hover {
+            color: $color-two;
+        }        
+    }
+}

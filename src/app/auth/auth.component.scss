@@ -1,0 +1,32 @@
+@import '../../assets/styles/styles';
+
+.text-center {
+  text-align: $center;
+}
+
+.login {
+  max-width: convert2rem(400);
+  margin: 1rem auto;
+  font-family: inherit;   
+
+  &-container {
+    background: $color-four;
+    padding: 1rem;
+    border-radius: $global-border-radius;
+  }
+
+  &-input, &-submit {
+    border-radius: $global-border-radius;
+    width: 100%;
+    font-size: $global-font-size;
+  }
+
+  &-input {
+    @include input-text();
+    margin-bottom: 1rem;
+  }
+
+  &-submit {
+    @include btn-primary($custom-green);
+  }
+}

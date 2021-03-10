@@ -1,0 +1,43 @@
+@import './../../assets/styles/styles';
+
+.header-content {
+    width: 100%;
+    height: convert2rem(76);
+    display: flex;
+    align-items: $center;
+    justify-content: $center;
+
+    @include respond-min($bp-small) {
+        height: convert2rem(96);
+    }
+
+    @include respond-min($bp-medium) {
+        height: convert2rem(144);
+    }
+
+    .item {        
+        width: 100%;
+        height: auto;
+        text-align: $center;
+
+        @include respond-min($bp-medium) {
+            text-align: left;
+        }
+
+        .logo {            
+            width: convert2rem(52);
+            height: convert2rem(52);            
+
+            @include respond-min($bp-small) {
+                width: convert2rem(64);
+                height: convert2rem(64);
+            }
+
+            @include respond-min($bp-medium) {
+                width: convert2rem(96);
+                height: convert2rem(96);
+                margin-left: 1.5rem;
+            }
+        }
+    }
+}
