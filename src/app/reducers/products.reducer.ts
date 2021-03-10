@@ -1,8 +1,8 @@
-import { Product } from "../models/product.model";
-import { FakeBackend_Product } from "../../assets/fake-backend/products";
+import { Product } from '../models/product.model';
+import { Products } from '../../assets/fake-backend/products';
 
-// initial state from FakeBackend_Product
-const initialState: Product[] = FakeBackend_Product;
+// initial state from Products
+const initialState: Product[] = Products;
 
 // Since there are no actions just yet, we simply return the original state
-export const productsReducer = (state: Product[] = initialState, {}) => state
+export const productsReducer = (state: Product[] = initialState, {}) => state;

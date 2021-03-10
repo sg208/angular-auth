@@ -1,4 +1,4 @@
-export const FakeBackend_Users = [
+export const Users = [
     {
         username: 'one@gmail.com',
         password: 'test',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from "../../assets/services/auth.service";
-import { Router } from "@angular/router";
+import { AuthService } from '../../assets/services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
   styleUrls: ['./admin.component.scss']
 })
 export class AdminComponent implements OnInit {
-  isSubmitted: Boolean;
+  isSubmitted: boolean;
   displayName: any;
   pageTitle: string;
 
@@ -18,11 +18,11 @@ export class AdminComponent implements OnInit {
     this.pageTitle = `Welcome back ${this.displayName}!`;
   }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
   }
 
   // logging out user, clear all localstorage then take user to login page
-  logout(){
+  logout(): void{
     this.isSubmitted = false;
     this.authService.logout();
     this.router.navigateByUrl('');

@@ -1,5 +1,5 @@
 // Fake backend for list of products as the initial state
-export const FakeBackend_Product = [
+export const Products = [
     {
         id: 'prd001001',
         name: 'A weekend ski',
@@ -30,4 +30,4 @@ export const FakeBackend_Product = [
         currentPrice: 33.99,
         lastUpdate: '2020-05-14T10:18:34.511Z'
     }
-]
+];
