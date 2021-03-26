@@ -4,11 +4,15 @@ This is a simple Angular app where it autheninticates user using fake backend us
 
 ## Ingredients
 
-Angular + Fake Backend + NGRX/Store (reducer only) + Configurable SCSS with mixins, function, etc. + WCAG 2.0 Level AA compliant, hosted on Vercel (Ci/CD).
+Angular + Fake Backend + NGRX/Store (reducer only) + Configurable SCSS with mixins, function, etc. + WCAG 2.0 Level AA compliant + Vercel (Ci/CD).
 
-## Sample app
+## Access
 
 https://angular-authenti-guard.vercel.app/
+
+user1: one@gmail.com | password1: test | name1: One Bazinga
+
+user2: two@gmail.com | password2: test | name2: Two Rocks
 
 ## Backlog items
 
